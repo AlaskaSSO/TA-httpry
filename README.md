@@ -1,2 +1,53 @@
 # TA-httpry
 Splunk Technology Adapter for httpry
+TA-httpry 1.0.3
+httpry Technology adapter and supporting scripts
+I believe this supports all versions of splunk (tested up to version 6.6.2)  If you have problems please submit version of splunk so I can attempt to duplicate the problem.
+
+This application is primarily supported via the following methods
+https://github.com/AlaskaSSO/TA-httpry
+https://answers.splunk.com/app/questions/3666.html
+
+This application is under the following license EXCEPT for one part which is under the GPL 2.0 license:
+(CC BY-SA 3.0)
+see: https://creativecommons.org/licenses/by-sa/3.0/legalcode to view the license
+
+This app includes a modified version of httpry_logger.pl, this has been modified to grab the necessary fields.
+The source of this application is here: https://github.com/mcholste/elsa/blob/master/contrib/httpry_logger.pl
+That code is released under the GPL 2.0 license.
+
+ChangeLog 1.0.3
+License change (CC BY-SA 3.0)
+
+This is a COMPLICATED TA;  it includes a web category lookup feature.  I will likely split that feature off into its own application in the future.  httpry does not provide a "category" hence the script the included categorizer and script to update the category yourself. 
+
+This application is meant to quickly provide a basic set of data for Splunk Enterprise Security.  (or any other application that uses the Common Information Model).
+
+TA-httpry provides several different views into the same data, if you do NOT want this data populating your ES console please do the following:
+copy tags.conf from default to local and then comment out the tags that you do not want to be loaded up.
+
+This complies with the Web CIM (tag web, tag proxy)
+#tags = web proxy
+
+
+This TA expects field layout to be as follows (and the supporting script generates that):
+|src_ip|src_port|dest_ip||dst_port|method|host|request_uri|referer|user_agent|status_code|content_length|content_type|content_language|server|x_flash_version|content_disposition|x_powered_by|cookie||
+
+instructions on how to generate those logs:
+Step 1;
+You need a linux box with a interface that can monitor traffic
+Step 2;
+You need to install httpry on the sniffer box with some scripts I've included
+copy all files from the ./README/snifferbox to your box that is doing the sniffing
+modify /etc/httpry.config and change host and from_host
+/usr/local/bin/httpry_logger.pl is a modified perl script that was written by mcholste@gmail.com and is currently located at:
+https://github.com/mcholste/elsa with the following url https://github.com/mcholste/elsa/blob/master/contrib/httpry_logger.pl
+For this to work you will need my modifications;  the original won't work.  You can diff the original and my copy to see the modifications.
+install httpry from http://dumpsterventures.com/jason/httpry/
+you are going to need to install a bunch of pre-req's for both the perl app and the shell script
+you will need to modify /usr/local/bin/run-httpry;  change the destination IP address and port to your syslog server
+Step 3;
+Don't forget to set the executable bit for the cron.daily/run-httpry script and the /usr/local/bin/httpry_logger.pl script!
+
+Then edit your syslog server (sample is included for syslog-ng);  Now you have web logs from sniffing the network on your syslog server.   Consume them as desired from your splunk server.
+
