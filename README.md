@@ -8,8 +8,7 @@ This application is primarily supported via the following methods
 https://github.com/AlaskaSSO/TA-httpry
 https://answers.splunk.com/app/questions/3666.html
 
-This application is under the following license EXCEPT for one part which is under the GPL 2.0 license:
-(CC BY-SA 3.0)
+This application is under the CC BY-SA 3.0 license EXCEPT for one part which is under the GPL 2.0 license:
 see: https://creativecommons.org/licenses/by-sa/3.0/legalcode to view the license
 
 This app includes a modified version of httpry_logger.pl, this has been modified to grab the necessary fields.
