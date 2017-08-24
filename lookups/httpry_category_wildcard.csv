@@ -1,0 +1,50 @@
+dest,category
+*.gov,government
+*.adult,porn
+*.sexy,porn
+*.singles,adult
+*.soccer,sports
+*.xxx,porn
+*.akamaihd.net,Content Server
+*.akamaized.net,Content Server
+*.state.ak.us,Content Server
+*.wikia.com,wiki
+*.edgesuite.net,Content Server
+*.tv,Entertainment
+g.ceipmsn.com,seaportexe
+*.msn.com,press
+*.cnn.com,press
+ping.chartbeat.net,analytics
+detectportal.firefox.com,Software/Hardware
+cws.checkpoint.com,security
+update.nai.com,security
+crl.microsoft.com,certificate
+*.digicert.com,certificate
+clients1.google.com,certificate
+mssl-ocsp.ws.symantec.com,certificate
+*.entrust.com,certificate
+sr.symcd.com,certificate
+gv.symcd.com,certificate
+ss.symcd.com,certificate
+ocsp.godaddy.com,certificate
+ocsp.msocsp.com,certificate
+*.globalsign.com,certificate
+*.trust-provider.com,certificate
+*.comodoca4.com,certificate
+*.identrust.com,certificate
+*.letsencrypt.org,certificate
+*.amazontrust.com,certificate
+oft.microsoft.com,ecommerce
+otf.microsoft.com,commerce
+microsoft.com,ecommerce
+www.microsoft.com,ecommerce
+static.globalshoppingcollective.com,ecommerce
+*.taboola.com,analytics
+akl.tv,government
+global.fncstatic.com,press
+*.quantserve.com,analytics
+*.advertising.com,ads
+kh.google.com,maps
+*.scorecardresearch.com,analytics
+*.outbrain.com,analytics
+*.ggpht.com,proxy

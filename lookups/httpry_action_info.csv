@@ -1,0 +1,13 @@
+status_code,action
+100,allowed
+101,allowed
+200,allowed
+204,allowed
+206,allowed
+301,allowed
+302,allowed
+304,allowed
+401,unknown
+403,unknown
+404,allowed
+500,unknown

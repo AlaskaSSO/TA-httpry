@@ -1,0 +1,2 @@
+2017-08-03T13:33:16-08:00 10.99.99.99 httpry |10.1.2.3|53324|151.101.54.2|80|POST|trc.taboola.com|/ninjajournalist/log/3/available|http://www.ninjajournalist.com/social/somesite/26/|Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko|204|0|image/gif|-|nginx/1.10.1|-|-|-|-|0.2||
+
