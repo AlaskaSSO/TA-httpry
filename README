@@ -1,3 +1,5 @@
+# TA-httpry
+Splunk Technology Adapter for httpry
 TA-httpry 1.0.3
 httpry Technology adapter and supporting scripts
 I believe this supports all versions of splunk (tested up to version 6.6.2)  If you have problems please submit version of splunk so I can attempt to duplicate the problem.
@@ -6,8 +8,7 @@ This application is primarily supported via the following methods
 https://github.com/AlaskaSSO/TA-httpry
 https://answers.splunk.com/app/questions/3666.html
 
-This application is under the following license EXCEPT for one part which is under the GPL 2.0 license:
-(CC BY-SA 3.0)
+This application is under the CC BY-SA 3.0 license EXCEPT for one part which is under the GPL 2.0 license:
 see: https://creativecommons.org/licenses/by-sa/3.0/legalcode to view the license
 
 This app includes a modified version of httpry_logger.pl, this has been modified to grab the necessary fields.
