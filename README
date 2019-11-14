@@ -1,6 +1,6 @@
 # TA-httpry
 Splunk Technology Adapter for httpry
-TA-httpry 1.0.3
+TA-httpry 1.0.4
 httpry Technology adapter and supporting scripts
 I believe this supports all versions of splunk (tested up to version 6.6.2)  If you have problems please submit version of splunk so I can attempt to duplicate the problem.
 
@@ -14,6 +14,9 @@ see: https://creativecommons.org/licenses/by-sa/3.0/legalcode to view the licens
 This app includes a modified version of httpry_logger.pl, this has been modified to grab the necessary fields.
 The source of this application is here: https://github.com/mcholste/elsa/blob/master/contrib/httpry_logger.pl
 That code is released under the GPL 2.0 license.
+
+ChangeLog 1.0.4
+updated csv file to pass AppInspect
 
 ChangeLog 1.0.3
 License change (CC BY-SA 3.0)
